@@ -7,6 +7,7 @@ bot = Bot(email='ment---3zolJcUB9Hxb@wwjmp.com', password='!zetking1488', prefix
 
 
 hellotxt = ['привет!', 'че как?', 'хай', 'здарова']
+
 @bot.event()
 async def on_ready(profile: UserProfile):
     logger.info(f'{profile.nickname} ready')
@@ -15,6 +16,11 @@ async def on_ready(profile: UserProfile):
 @bot.command('привет')
 async def echo(ctx: Context):
     await ctx.reply(random.choice(hellotxt))
+    await ctx.reply('хотите инструкцию? напишите: бот инструкцию')
+
+@bot.command('бот инструкцию')
+async def echo(ctx: Context):
+    await ctx.reply('пат')
     
 @bot.command('image')
 async def on_image(ctx: Context):
