@@ -1,0 +1,6 @@
+aiohttp
+pydantic
+python-dotenv
+ujson
+aiofile
+ed-amino
